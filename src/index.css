@@ -34,6 +34,11 @@ form{
   margin: 30px auto 10px;
   text-align: center;
 }
+label input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
 label{
   display: block;
   width: 30px;
@@ -45,11 +50,6 @@ label{
   color: var(--primary);
   font-weight: bold;
   font-size: 24px;
-}
-label input{
-  height: 0;
-  width: 0;
-  opacity: 0;
 }
 label:hover{
   background: var(--primary);
