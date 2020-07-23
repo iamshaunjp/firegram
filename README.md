@@ -3,6 +3,6 @@ Starting &amp; final course files for the FireGram tutorial (React, Firebase &am
 
 --- youtube link here
 
-## Using the files
+### Using the files
 * To see the starter files, select the 'starter' branch.
 * To see the final files, select the 'final' branch.
