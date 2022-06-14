@@ -1,8 +1,7 @@
-import * as firebase from 'firebase/app'
-// storage for images
-import 'firebase/storage';
-// database
-import 'firebase/firestore';
+// import * as firebase from "firebase/app";
+import firebase from "firebase/compat/app";
+import "firebase/compat/storage";
+import "firebase/compat/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -15,12 +14,15 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
 
 // initialize storage
 const projectStorage = firebase.storage();
 
-// initilaize database
+// initialize database
 const projectFirestore = firebase.firestore();
 
-export {projectStorage, projectFirestore};
+// function to get timestamp from firestore
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;
+
+export { projectStorage, projectFirestore, timestamp };
